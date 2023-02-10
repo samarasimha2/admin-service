@@ -1,0 +1,15 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: admin-service
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    password: root
+    url: jdbc:mysql://localhost:3306/simha1_db
+    username: root
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
